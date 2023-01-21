@@ -22,6 +22,14 @@
         <p *ngSwitchDefault>Seleccione una pestaña</p>
     </div>
 </div> -->
-<div [ngClass]="{'cuadrado': 2+1==2}">
+<button (click)="alternarFondo()">alternar</button>
+<div [ngClass]="{'cuadrado': mostarCuadrado}">
     <p>Cuadrado escarlata</p>
+</div>
+<div *ngFor="let producto of productos" class="producto">
+    <p [ngClass]="{'textoImportante': producto.esImportante,'textoGrande': true}">Hola mi nombre es:{{producto.nombre}}</p>
+    <p>Hola mi tengo :{{producto.stock}}</p>
+    <p>Hola mi compañia es:{{producto.fabricante}}</p>
+    <p>Hola mi v:{{producto.fechaVence}}</p>
+    <p [class.textoImportante]="producto.esImportante">Hola mi v:{{producto.esImportante}}</p>
 </div>
