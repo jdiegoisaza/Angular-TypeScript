@@ -1,0 +1,27 @@
+<!-- <div *ngIf="!cargando"><p>
+    Hola termino de cargar
+</p></div>
+<img *ngIf="cargando" src="https://i.gifer.com/origin/34/34338d26023e5515f6cc8969aa027bca_w200.gif" alt="">
+
+<button (click)="alternar()">Alternar Cargando</button> -->
+<!-- 
+<div *ngFor="let producto of productos" class="producto">
+    <p>Hola mi nombre es:{{producto.nombre}}</p>
+    <p>Hola mi tengo :{{producto.stock}}</p>
+    <p>Hola mi compañia es:{{producto.fabricante}}</p>
+    <p>Hola mi v:{{producto.fechaVence}}</p>
+</div> -->
+<!-- <div class="tab" [ngSwitch]="pestana">
+    <button (click)="cambiarPestana('perfil')">Perfil</button>
+    <button (click)="cambiarPestana('puntos')">Puntos</button>
+    <button (click)="cambiarPestana('info')">Info</button>
+    <div class="tabContenido">
+        <p *ngSwitchCase="'perfil'">Este es el Perfil</p>
+        <p *ngSwitchCase="'puntos'">Estos son los Puntos</p>
+        <p *ngSwitchCase="'info'">Este es el Info</p>
+        <p *ngSwitchDefault>Seleccione una pestaña</p>
+    </div>
+</div> -->
+<div [ngClass]="{'cuadrado': 2+1==2}">
+    <p>Cuadrado escarlata</p>
+</div>
